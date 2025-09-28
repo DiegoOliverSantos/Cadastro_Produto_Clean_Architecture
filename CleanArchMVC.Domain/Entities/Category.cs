@@ -1,9 +1,6 @@
-﻿using CleanArchMVC.Domain.Validation;
-using System;
+﻿using CleanArchMVC.BuildingBlocks.Core.DomainObjects;
+using CleanArchMVC.Domain.Validation;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CleanArchMVC.Domain.Entities
 {
@@ -16,13 +13,11 @@ namespace CleanArchMVC.Domain.Entities
         #endregion
 
         #region Construtores
-        public Category(int id, string name)
-        {
-            DomainExceptionValidation.When(id < 0, "é necessario que o id seja maior que 0");
-            Id = id;
-            ValidateDomain(name);
-        }
 
+        public Category()
+        {
+            
+        }
         public Category(string name)
         {
             ValidateDomain(name);

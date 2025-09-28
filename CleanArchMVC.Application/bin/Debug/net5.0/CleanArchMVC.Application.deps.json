@@ -14,15 +14,34 @@
           "CleanArchMVC.Application.dll": {}
         }
       },
-      "CleanArchMVC.Domain/1.0.0": {
+      "CleanArchMVC.BuildingBlocks.Core/1.0.0": {
         "runtime": {
-          "CleanArchMVC.Domain.dll": {}
+          "CleanArchMVC.BuildingBlocks.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "CleanArchMVC.Domain/1.0.0": {
+        "dependencies": {
+          "CleanArchMVC.BuildingBlocks.Core": "1.0.0"
+        },
+        "runtime": {
+          "CleanArchMVC.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "CleanArchMVC.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CleanArchMVC.BuildingBlocks.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

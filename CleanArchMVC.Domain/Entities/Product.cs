@@ -1,4 +1,5 @@
-﻿using CleanArchMVC.Domain.Validation;
+﻿using CleanArchMVC.BuildingBlocks.Core.DomainObjects;
+using CleanArchMVC.Domain.Validation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,12 +16,17 @@ namespace CleanArchMVC.Domain.Entities
         public decimal Price { get; private set; }
         public decimal Stock { get; private set; }
         public string Image { get; private set; }
-        public int CategoryId { get; set; }
+        public Guid CategoryId { get; set; }
         public Category Category { get; set; }
 
         #endregion
 
         #region Construtores
+
+        public Product()
+        {
+            
+        }
         public Product(string name,
                string descripion,
                decimal price,
@@ -30,21 +36,7 @@ namespace CleanArchMVC.Domain.Entities
         {
             ValidateDomain(name,descripion, price, stock, image);
             Category = category;
-            CategoryId = Category.Id;
-        }
-        public Product(int id,
-               string name,
-               string descripion,
-               decimal price,
-               decimal stock,
-               string image,
-               Category category)
-        {
-            DomainExceptionValidation.When(id < 0, "id não pode ser menor que 0");
-            Id = id;
-            ValidateDomain(name, descripion, price, stock, image);
-            Category = category;
-            CategoryId = Category.Id;
+            CategoryId = Category.ID;
         }
         #endregion
 
@@ -68,7 +60,7 @@ namespace CleanArchMVC.Domain.Entities
             DomainExceptionValidation.When(stock < 0, 
                 "Estoque Invalido.O estoque do produto precisa ser maior que 0");
             // image
-            DomainExceptionValidation.When(image.Length > 250, 
+            DomainExceptionValidation.When(image?.Length > 250, 
                 "Imagem Invalida. Quantidade de Caracteres muito grande.Maximo permitido 250 caracteres");
             Name = name;
             Descripion = description; 
@@ -81,7 +73,7 @@ namespace CleanArchMVC.Domain.Entities
         {
             ValidateDomain(name, description, price, stock, image);
             Category = category;
-            CategoryId = Category.Id;
+            CategoryId = Category.ID;
         }
         #endregion
     }

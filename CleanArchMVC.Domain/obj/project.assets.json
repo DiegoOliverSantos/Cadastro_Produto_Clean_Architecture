@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "CleanArchMVC.BuildingBlocks.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/CleanArchMVC.BuildingBlocks.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArchMVC.BuildingBlocks.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CleanArchMVC.BuildingBlocks.Core/1.0.0": {
+      "type": "project",
+      "path": "../BuildingBlocks/CleanArchMVC.BuildingBlocks.Core/CleanArchMVC.BuildingBlocks.Core.csproj",
+      "msbuildProject": "../BuildingBlocks/CleanArchMVC.BuildingBlocks.Core/CleanArchMVC.BuildingBlocks.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "CleanArchMVC.BuildingBlocks.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Diego Oliveira\\.nuget\\packages\\": {},
@@ -42,7 +61,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Curso\\CleanArchMVC\\BuildingBlocks\\CleanArchMVC.BuildingBlocks.Core\\CleanArchMVC.BuildingBlocks.Core.csproj": {
+              "projectPath": "D:\\Curso\\CleanArchMVC\\BuildingBlocks\\CleanArchMVC.BuildingBlocks.Core\\CleanArchMVC.BuildingBlocks.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -54,7 +77,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net5.0": {
@@ -75,7 +99,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

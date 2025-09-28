@@ -17,3 +17,11 @@ D:\Curso\CleanArchMVC\CleanArchMVC.Infra.IoC\obj\Debug\net5.0\CleanArchMVC.Infra
 D:\Curso\CleanArchMVC\CleanArchMVC.Infra.IoC\obj\Debug\net5.0\refint\CleanArchMVC.Infra.IoC.dll
 D:\Curso\CleanArchMVC\CleanArchMVC.Infra.IoC\obj\Debug\net5.0\CleanArchMVC.Infra.IoC.pdb
 D:\Curso\CleanArchMVC\CleanArchMVC.Infra.IoC\obj\Debug\net5.0\ref\CleanArchMVC.Infra.IoC.dll
+D:\Curso\CleanArchMVC\CleanArchMVC.Infra.IoC\obj\Debug\net5.0\CleanArchMVC.Infra.IoC.sourcelink.json
+D:\Curso\CleanArchMVC\CleanArchMVC.Infra.IoC\bin\Debug\net5.0\CleanArchMVC.BuildingBlocks.Core.dll
+D:\Curso\CleanArchMVC\CleanArchMVC.Infra.IoC\bin\Debug\net5.0\CleanArchMVC.BuildingBlocks.Infra.dll
+D:\Curso\CleanArchMVC\CleanArchMVC.Infra.IoC\bin\Debug\net5.0\CleanArchMVC.BuildingBlocks.Core.pdb
+D:\Curso\CleanArchMVC\CleanArchMVC.Infra.IoC\bin\Debug\net5.0\CleanArchMVC.BuildingBlocks.Infra.pdb
+D:\Curso\CleanArchMVC\CleanArchMVC.Infra.IoC\bin\Debug\net5.0\CleanArchMVC.Infra.IoC.runtimeconfig.json
+D:\Curso\CleanArchMVC\CleanArchMVC.Infra.IoC\bin\Debug\net5.0\CleanArchMVC.Infra.IoC.runtimeconfig.dev.json
+D:\Curso\CleanArchMVC\CleanArchMVC.Infra.IoC\obj\Debug\net5.0\CleanArchMVC.Infra.IoC.genruntimeconfig.cache

@@ -1,4 +1,5 @@
-﻿using CleanArchMVC.Domain.Entities;
+﻿using CleanArchMVC.BuildingBlocks.Core.Data;
+using CleanArchMVC.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,16 +8,8 @@ using System.Threading.Tasks;
 
 namespace CleanArchMVC.Domain.Interfaces
 {
-    public interface ICategoryRepository
+    public interface ICategoryRepository : IRepository<Category>
     {
-        Task<IEnumerable<Category>> GetAll();
 
-        Task<Category> GetById(int? id);
-        
-        Task<Category> Create(Category category);
-
-        Task<Category> Update(Category category);
-
-        Task<Category> Delete(Category category);
     }
 }

@@ -98,7 +98,6 @@ D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\refs\Microsoft.Extensi
 D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\refs\Microsoft.Extensions.Configuration.UserSecrets.dll
 D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\refs\Microsoft.Extensions.Configuration.Xml.dll
 D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\refs\Microsoft.Extensions.DependencyInjection.dll
 D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
 D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll
 D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\refs\Microsoft.Extensions.FileProviders.Abstractions.dll
@@ -156,7 +155,6 @@ D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\refs\System.Data.DataS
 D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\refs\System.Data.dll
 D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\refs\System.Diagnostics.Contracts.dll
 D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\refs\System.Diagnostics.Debug.dll
-D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\refs\System.Diagnostics.DiagnosticSource.dll
 D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\refs\System.Diagnostics.EventLog.dll
 D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\refs\System.Diagnostics.FileVersionInfo.dll
 D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\refs\System.Diagnostics.Process.dll
@@ -367,3 +365,17 @@ D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\obj\Debug\net5.0\refint\CleanArchMVC.We
 D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\obj\Debug\net5.0\CleanArchMVC.WebUI.pdb
 D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\obj\Debug\net5.0\CleanArchMVC.WebUI.genruntimeconfig.cache
 D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\obj\Debug\net5.0\ref\CleanArchMVC.WebUI.dll
+D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\obj\Debug\net5.0\CleanArchMVC.WebUI.sourcelink.json
+D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\CleanArchMVC.BuildingBlocks.Core.dll
+D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\CleanArchMVC.BuildingBlocks.Infra.dll
+D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\CleanArchMVC.BuildingBlocks.Core.pdb
+D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\CleanArchMVC.BuildingBlocks.Infra.pdb
+D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\Npgsql.dll
+D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\Humanizer.dll
+D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
