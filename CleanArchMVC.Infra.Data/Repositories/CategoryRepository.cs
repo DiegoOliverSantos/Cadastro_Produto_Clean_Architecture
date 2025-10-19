@@ -1,4 +1,4 @@
-﻿using CleanArchMVC.BuildingBlocks.Infra.Data;
+﻿using CleanArchMVC.BuildingBlocks.Core.Data;
 using CleanArchMVC.Domain.Entities;
 using CleanArchMVC.Domain.Interfaces;
 using CleanArchMVC.Infra.Data.Context;
@@ -18,6 +18,8 @@ namespace CleanArchMVC.Infra.Data.Repositories
         {
             _context = context;
         }
+
+        public IUnitOfWork UnitOfWork => _context;
 
         public async Task AddAsync(Category category)
         {

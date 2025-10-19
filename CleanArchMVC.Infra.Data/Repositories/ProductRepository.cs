@@ -1,4 +1,5 @@
-﻿using CleanArchMVC.Domain.Entities;
+﻿using CleanArchMVC.BuildingBlocks.Core.Data;
+using CleanArchMVC.Domain.Entities;
 using CleanArchMVC.Domain.Interfaces;
 using CleanArchMVC.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
@@ -14,6 +15,8 @@ namespace CleanArchMVC.Infra.Data.Repositories
     {
         private readonly CatalogoContext _context;
 
+        public IUnitOfWork UnitOfWork => _context;
+
         public ProductRepository(CatalogoContext context)
         {
             _context = context;
@@ -23,7 +26,7 @@ namespace CleanArchMVC.Infra.Data.Repositories
             await _context.Products.AddAsync(product);
         }
 
-        public async Task<Product> GerProductCategoryAsync(Guid id)
+        public async Task<Product> GetProductCategoryAsync(Guid id)
         {
             return await _context.Products
                                  .Include(p => p.Category)

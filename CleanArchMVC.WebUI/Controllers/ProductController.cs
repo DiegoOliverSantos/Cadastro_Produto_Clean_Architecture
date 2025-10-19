@@ -20,5 +20,11 @@ namespace CleanArchMVC.WebUI.Controllers
 
             return View(products);
         }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }
