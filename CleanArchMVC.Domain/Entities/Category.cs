@@ -8,6 +8,7 @@ namespace CleanArchMVC.Domain.Entities
     {
         #region Propriedades
         public string Name { get; private set; }
+        public bool Disable { get; private set; }
         public ICollection<Product> Products { get; set; }
 
         #endregion
@@ -21,6 +22,7 @@ namespace CleanArchMVC.Domain.Entities
         public Category(string name)
         {
             ValidateDomain(name);
+            Disable = false;
         }
         #endregion
 
@@ -36,6 +38,15 @@ namespace CleanArchMVC.Domain.Entities
         public void Alterar(string name)
         {
             ValidateDomain(name);
+        }
+
+        public void Desativar()
+        {
+            Disable = true;
+        }
+        public void Ativar()
+        {
+            Disable = false;
         }
         #endregion
 

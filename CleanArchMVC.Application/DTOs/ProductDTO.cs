@@ -27,7 +27,7 @@ namespace CleanArchMVC.Application.DTOs
 
         [Required(ErrorMessage = "The Price is Required")]
         [Column(TypeName = "decimal(10,2)")]
-        [DisplayFormat(DataFormatString = "{0:C2}")]
+        [DisplayFormat(DataFormatString = "{0:N2}", ApplyFormatInEditMode = true)]
         [DataType(DataType.Currency)]
         [DisplayName("Preco")]
         public decimal Price { get; set; }
@@ -39,6 +39,8 @@ namespace CleanArchMVC.Application.DTOs
         [MaxLength(250)]
         [DisplayName("Imagem")]
         public string Image { get; set; }
+        [DisplayName("Desativado")]
+        public bool Disable { get; set; }
         public Category Category { get; set; }
 
         [DisplayName()]

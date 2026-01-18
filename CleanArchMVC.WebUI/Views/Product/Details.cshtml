@@ -1,0 +1,43 @@
+﻿@model CleanArchMVC.Application.DTOs.ProductDTO
+
+@{
+    ViewData["Title"] = "Details Product";
+}
+
+<h3>@ViewData["Title"]</h3>
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show auto-alert" role="alert">
+        @Html.Raw(TempData["Error"])
+    </div>
+}
+
+<div>
+    <hr />
+<dl class="row">
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Name)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Name)</dd>
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Description)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Description)</dd>
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Stock)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Stock)</dd>
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Price)</dt>
+        <dd class="col-sm-10">R$ @Html.DisplayFor(model => model.Price)</dd>
+        <dt class="col-sm-2">
+            @if (!ViewBag.ImageExist)
+            {
+                <img src="~/images/noimage.png" class="rounded-circle" height="300" width="300" asp-append-version="true"/>
+            }
+            else
+            {
+                <img src="~/images/@Model.Image" class="rounded-circle" height="300" width="300" asp-append-version="true" />
+            }
+        </dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Image)</dd>
+</dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
+    <a asp-action="Index" class="btn btn-info">Back</a>
+</div>

@@ -1,4 +1,4 @@
-﻿using CleanArchMVC.BuildingBlocks.Infra.Data;
+﻿using CleanArchMVC.BuildingBlocks.Core.Data;
 using CleanArchMVC.Domain.Entities;
 using CleanArchMVC.Domain.Interfaces;
 using CleanArchMVC.Infra.Data.Context;
@@ -19,6 +19,8 @@ namespace CleanArchMVC.Infra.Data.Repositories
             _context = context;
         }
 
+        public IUnitOfWork UnitOfWork => _context;
+
         public async Task AddAsync(Category category)
         {
             await _context.Categories.AddAsync(category);
@@ -31,7 +33,15 @@ namespace CleanArchMVC.Infra.Data.Repositories
 
         public async Task<Category> GetByIdAsync(Guid id)
         {
-            return await _context.Categories.FirstOrDefaultAsync(c => c.ID == id);
+            return await _context
+                            .Categories
+                            .Include(i => i.Products)
+                            .FirstOrDefaultAsync(c => c.ID == id);
+        }
+
+        public async Task<Category> GetCategoryByName(string name)
+        {
+            return await _context.Categories.Where(t => t.Name == name).FirstOrDefaultAsync();
         }
 
         public void Remove(Category category)

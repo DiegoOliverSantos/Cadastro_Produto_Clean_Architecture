@@ -12,10 +12,11 @@ namespace CleanArchMVC.Domain.Entities
     {
         #region Propriedades
         public string Name { get; private set; }
-        public string Descripion { get; private set; }
+        public string Description { get; private set; }
         public decimal Price { get; private set; }
         public decimal Stock { get; private set; }
         public string Image { get; private set; }
+        public bool Disable { get; private set; }
         public Guid CategoryId { get; set; }
         public Category Category { get; set; }
 
@@ -37,6 +38,7 @@ namespace CleanArchMVC.Domain.Entities
             ValidateDomain(name,descripion, price, stock, image);
             Category = category;
             CategoryId = Category.ID;
+            Disable = false;
         }
         #endregion
 
@@ -63,7 +65,7 @@ namespace CleanArchMVC.Domain.Entities
             DomainExceptionValidation.When(image?.Length > 250, 
                 "Imagem Invalida. Quantidade de Caracteres muito grande.Maximo permitido 250 caracteres");
             Name = name;
-            Descripion = description; 
+            Description = description; 
             Price = price;
             Stock = stock;
             Image = image;
@@ -74,6 +76,16 @@ namespace CleanArchMVC.Domain.Entities
             ValidateDomain(name, description, price, stock, image);
             Category = category;
             CategoryId = Category.ID;
+        }
+
+        public void Desativar()
+        {
+            Disable = true;
+        }
+
+        public void Ativar()
+        {
+            Disable = false;
         }
         #endregion
     }

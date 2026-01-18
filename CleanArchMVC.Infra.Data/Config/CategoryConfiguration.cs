@@ -17,15 +17,12 @@ namespace CleanArchMVC.Infra.Data.EntitiesConfiguration
                    .HasColumnName("nome")
                    .IsRequired();
 
+            builder.Property(c => c.Disable)
+                   .HasColumnName("Desativado");
+
             builder.HasMany(c => c.Products)
                    .WithOne()
                    .HasForeignKey(p => p.CategoryId);
-
-            builder.HasData(
-                            new Category("Material Escolar"),
-                            new Category("Eletrônicos"),
-                            new Category("Acessorios")
-                            );
 
         }
     }

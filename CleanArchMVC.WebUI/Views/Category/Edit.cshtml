@@ -1,0 +1,29 @@
+﻿@model CleanArchMVC.Application.DTOs.CategoryDTO
+@{
+    ViewData["Title"] = "Edit Category";
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show auto-alert" role="alert">
+        @TempData["Error"]
+    </div>
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Edit" method="post">
+    <div class="form-group">
+        <label asp-for="Name" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"> </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col col-md-10">
+            <input type="submit" class="btn btn-success" value="Save" />
+            <a asp-action="Index" class="btn btn-info">Back</a>
+        </div>
+
+    </div>
+</form>
