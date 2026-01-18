@@ -12,11 +12,11 @@ namespace CleanArchMVC.Application.Interfaces
         Task<IEnumerable<ProductDTO>> GetAll();
 
         Task<ProductDTO> GetById(Guid id);
-        Task<ProductDTO> GetProductCategory(Guid id);
+        //Task<ProductDTO> GetProductCategory(Guid id);
 
         Task Add(ProductDTO productDTO);
 
-        void Update(ProductDTO productDTO);
+        Task Update(ProductDTO productDTO);
 
         Task Delete(Guid id);
     }

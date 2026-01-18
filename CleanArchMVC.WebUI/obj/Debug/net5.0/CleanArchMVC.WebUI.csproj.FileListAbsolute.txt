@@ -334,7 +334,6 @@ D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\obj\Debug\net5.0\CleanArchMVC.WebUI.Raz
 D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\obj\Debug\net5.0\CleanArchMVC.WebUI.TagHelpers.input.cache
 D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\obj\Debug\net5.0\CleanArchMVC.WebUI.TagHelpers.output.cache
 D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\obj\Debug\net5.0\CleanArchMVC.WebUI.RazorCoreGenerate.cache
-D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
@@ -389,3 +388,11 @@ D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\System.Runtime.Compile
 D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\System.Text.Encodings.Web.dll
 D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\System.Text.Json.dll
 D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\obj\Debug\net5.0\Razor\Views\Product\Create.cshtml.g.cs
+D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\obj\Debug\net5.0\Razor\Views\Category\Create.cshtml.g.cs
+D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\obj\Debug\net5.0\Razor\Views\Category\Edit.cshtml.g.cs
+D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\obj\Debug\net5.0\Razor\Views\Category\Details.cshtml.g.cs
+D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\obj\Debug\net5.0\Razor\Views\Product\Edit.cshtml.g.cs
+D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\obj\Debug\net5.0\Razor\Views\Product\Details.cshtml.g.cs

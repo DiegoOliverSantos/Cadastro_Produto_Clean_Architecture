@@ -1,68 +1,66 @@
 ﻿using AutoMapper;
+using CleanArchMVC.Application.Commands;
 using CleanArchMVC.Application.DTOs;
 using CleanArchMVC.Application.Interfaces;
-using CleanArchMVC.Domain.Entities;
-using CleanArchMVC.Domain.Interfaces;
+using CleanArchMVC.Application.Queries;
+using MediatR;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace CleanArchMVC.Application.Services
 {
     public class ProductService : IProductService
     {
-        private readonly IProductRepository _productRepository;
         private readonly IMapper _mapper;
+        private readonly IMediator _mediator;
 
-        public ProductService(IProductRepository productRepository, 
-                              IMapper mapper)
+        public ProductService(IMapper mapper,
+                              IMediator mediator)
         {
-            _productRepository = productRepository;
             _mapper = mapper;
+            _mediator = mediator;
         }
 
         public async Task Add(ProductDTO productDTO)
         {
-            var product = _mapper.Map<Product>(productDTO);
+            var productCreateCommand = _mapper.Map<CreateProductCommand>(productDTO);
 
-            await _productRepository.AddAsync(product);
+            await _mediator.Send(productCreateCommand);
         }
 
         public async Task Delete(Guid id)
         {
-            var product = await _productRepository.GetByIdAsync(id);
-
-            _productRepository.Remove(product);
+            await  _mediator.Send(new RemoveProductCommand(id));
         }
 
         public async Task<IEnumerable<ProductDTO>> GetAll()
         {
-            var products = await _productRepository.GetAllAsync();
+            var result = await _mediator.Send(new GetAllProductsQuery());
 
-            return _mapper.Map<IEnumerable<ProductDTO>>(products);
+            return _mapper.Map<IEnumerable<ProductDTO>>(result);
+
+
         }
 
         public async Task<ProductDTO> GetById(Guid id)
         {
-            var product = await _productRepository.GetByIdAsync(id);
+            var result = await _mediator.Send(new GetProductByIdQuery(id));
 
-            return _mapper.Map<ProductDTO>(product);
+            return _mapper.Map<ProductDTO>(result);
         }
 
-        public async Task<ProductDTO> GetProductCategory(Guid id)
+        //public async Task<ProductDTO> GetProductCategory(Guid id)
+        //{
+        //    var result = await _mediator.Send(new GetProductByIdQuery(id));
+        //    return _mapper.Map<ProductDTO>(result);
+        //}
+
+        public async Task Update(ProductDTO productDTO)
         {
-            var product = await _productRepository.GetByIdAsync(id);
+            var productUpdateCommand = _mapper.Map<UpdateProductCommand>(productDTO);
 
-            return _mapper.Map<ProductDTO>(product);
-        }
-
-        public void Update(ProductDTO productDTO)
-        {
-            var product = _mapper.Map<Product>(productDTO);
-
-            _productRepository.Update(product);
+            await _mediator.Send(productUpdateCommand);
         }
     }
 }

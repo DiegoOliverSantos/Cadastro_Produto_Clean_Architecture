@@ -22,7 +22,7 @@ namespace CleanArchMVC.Infra.Data.EntitiesConfiguration
                    .HasColumnName("nome")
                    .IsRequired();
 
-            builder.Property(p => p.Descripion)
+            builder.Property(p => p.Description)
                    .HasColumnType("varchar(200)")
                    .HasColumnName("descricao")
                    .IsRequired();
@@ -36,7 +36,8 @@ namespace CleanArchMVC.Infra.Data.EntitiesConfiguration
                    .HasColumnType("varchar(250)")
                    .HasColumnName("imagem");
 
-
+            builder.Property(p => p.Disable)
+                   .HasColumnName("Desativado");
 
             builder.HasOne(p => p.Category)
                    .WithMany(c => c.Products)

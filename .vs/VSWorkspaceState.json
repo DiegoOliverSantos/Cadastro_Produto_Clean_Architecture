@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CleanArchMVC.Domain\\Entities",
+    "\\CleanArchMVC.Infra.Data",
+    "\\CleanArchMVC.Infra.Data\\bin"
   ],
-  "SelectedNode": "\\CleanArchMVC.sln",
+  "SelectedNode": "\\CleanArchMVC.Infra.Data\\Config",
   "PreviewInSolutionExplorer": false
 }

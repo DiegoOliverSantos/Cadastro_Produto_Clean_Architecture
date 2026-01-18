@@ -14,8 +14,9 @@ namespace CleanArchMVC.Application.Interfaces
 
         Task Add(CategoryDTO category);
 
-        void Update(CategoryDTO category);
+        Task Update(CategoryDTO category);
 
-        Task Delete(Guid id);
+        Task Disable(Guid id);
+        Task Active(Guid id);
     }
 }

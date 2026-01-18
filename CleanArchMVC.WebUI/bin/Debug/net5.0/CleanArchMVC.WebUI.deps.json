@@ -384,6 +384,21 @@
           "lib/netstandard2.0/MediatR.Contracts.dll": {}
         }
       },
+      "MediatR.Extensions.Microsoft.DependencyInjection/11.0.0": {
+        "dependencies": {
+          "MediatR": "13.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/MediatR.Extensions.Microsoft.DependencyInjection.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Mvc.Razor.Extensions/5.0.17": {
         "dependencies": {
           "Microsoft.AspNetCore.Razor.Language": "5.0.17",
@@ -922,8 +937,7 @@
       "CleanArchMVC.Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "10.1.1",
-          "CleanArchMVC.Domain": "1.0.0",
-          "MediatR": "13.0.0"
+          "CleanArchMVC.Domain": "1.0.0"
         },
         "runtime": {
           "CleanArchMVC.Application.dll": {
@@ -936,6 +950,9 @@
         }
       },
       "CleanArchMVC.BuildingBlocks.Core/1.0.0": {
+        "dependencies": {
+          "MediatR": "13.0.0"
+        },
         "runtime": {
           "CleanArchMVC.BuildingBlocks.Core.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -999,7 +1016,8 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
           "CleanArchMVC.Application": "1.0.0",
           "CleanArchMVC.Domain": "1.0.0",
-          "CleanArchMVC.Infra.Data": "1.0.0"
+          "CleanArchMVC.Infra.Data": "1.0.0",
+          "MediatR.Extensions.Microsoft.DependencyInjection": "11.0.0"
         },
         "runtime": {
           "CleanArchMVC.Infra.IoC.dll": {
@@ -2691,6 +2709,13 @@
       "sha512": "sha512-FYv95bNT4UwcNA+G/J1oX5OpRiSUxteXaUt2BJbRSdRNiIUNbggJF69wy6mnk2wYToaanpdXZdCwVylt96MpwQ==",
       "path": "mediatr.contracts/2.0.1",
       "hashPath": "mediatr.contracts.2.0.1.nupkg.sha512"
+    },
+    "MediatR.Extensions.Microsoft.DependencyInjection/11.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jfD2NBYvP+HiUil2DWfM4bn+bCLp4H2xvoc9aorcnn2Jpgz7Ey8RyYMpgqeF3bs6CP6t8pzb6WkF5NFF/1RLHA==",
+      "path": "mediatr.extensions.microsoft.dependencyinjection/11.0.0",
+      "hashPath": "mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Mvc.Razor.Extensions/5.0.17": {
       "type": "package",

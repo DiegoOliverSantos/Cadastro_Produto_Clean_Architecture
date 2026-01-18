@@ -407,6 +407,9 @@
       "CleanArchMVC.BuildingBlocks.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "MediatR": "13.0.0"
+        },
         "compile": {
           "bin/placeholder/CleanArchMVC.BuildingBlocks.Core.dll": {}
         },
@@ -1385,8 +1388,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "AutoMapper >= 10.1.1",
-      "CleanArchMVC.Domain >= 1.0.0",
-      "MediatR >= 13.0.0"
+      "CleanArchMVC.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1419,7 +1421,8 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/nextsoftbr/_packaging/Gin5Packages/nuget/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
@@ -1450,10 +1453,6 @@
           "AutoMapper": {
             "target": "Package",
             "version": "[10.1.1, )"
-          },
-          "MediatR": {
-            "target": "Package",
-            "version": "[13.0.0, )"
           }
         },
         "imports": [
@@ -1472,7 +1471,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -25,6 +25,10 @@ namespace CleanArchMVC.Infra.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
+                    b.Property<bool>("Disable")
+                        .HasColumnType("boolean")
+                        .HasColumnName("Desativado");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("varchar(100)")
@@ -33,23 +37,6 @@ namespace CleanArchMVC.Infra.Data.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("categoria", "catalogo");
-
-                    b.HasData(
-                        new
-                        {
-                            ID = new Guid("de666796-44c3-4666-a0e5-c363521e2ead"),
-                            Name = "Material Escolar"
-                        },
-                        new
-                        {
-                            ID = new Guid("e74d91be-b74a-46a9-972c-6d3c02b480af"),
-                            Name = "Eletrônicos"
-                        },
-                        new
-                        {
-                            ID = new Guid("60e861ce-0210-4246-a40e-d5b31781a721"),
-                            Name = "Acessorios"
-                        });
                 });
 
             modelBuilder.Entity("CleanArchMVC.Domain.Entities.Product", b =>
@@ -61,10 +48,14 @@ namespace CleanArchMVC.Infra.Data.Migrations
                     b.Property<Guid>("CategoryId")
                         .HasColumnType("uuid");
 
-                    b.Property<string>("Descripion")
+                    b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("varchar(200)")
                         .HasColumnName("descricao");
+
+                    b.Property<bool>("Disable")
+                        .HasColumnType("boolean")
+                        .HasColumnName("Desativado");
 
                     b.Property<string>("Image")
                         .HasColumnType("varchar(250)")
