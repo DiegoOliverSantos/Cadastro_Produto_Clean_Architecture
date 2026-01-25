@@ -1,5 +1,7 @@
 ﻿using CleanArchMVC.BuildingBlocks.Core.Data;
 using CleanArchMVC.Domain.Entities;
+using CleanArchMVC.Infra.Data.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -9,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace CleanArchMVC.Infra.Data.Context
 {
-    public class CatalogoContext : DbContext, IUnitOfWork
+    public class CatalogoContext : IdentityDbContext<ApplicationUser>, IUnitOfWork
     {
         public CatalogoContext(DbContextOptions<CatalogoContext> options) : base(options)
         {

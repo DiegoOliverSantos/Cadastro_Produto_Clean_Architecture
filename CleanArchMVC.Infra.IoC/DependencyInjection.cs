@@ -1,13 +1,14 @@
 ﻿using CleanArchMVC.Application;
-using CleanArchMVC.Application.Commands;
-using CleanArchMVC.Application.Handlers;
 using CleanArchMVC.Application.Interfaces;
 using CleanArchMVC.Application.Mappings;
 using CleanArchMVC.Application.Services;
+using CleanArchMVC.Domain.Account;
 using CleanArchMVC.Domain.Interfaces;
 using CleanArchMVC.Infra.Data.Context;
+using CleanArchMVC.Infra.Data.Identity;
 using CleanArchMVC.Infra.Data.Repositories;
 using MediatR;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -36,9 +37,15 @@ namespace CleanArchMVC.Infra.IoC
             
             services.AddMediatR(x => x.RegisterServicesFromAssembly(typeof(CleanArchMVCApplicationAssembly).Assembly));
 
-            //services.AddScoped<IRequestHandler<CreateCategoryCommand, bool>, CategoryCommandHandler>();
-            //services.AddScoped<IRequestHandler<RemoveCategoryCommand, bool>, CategoryCommandHandler>();
-            //services.AddScoped<IRequestHandler<UpdateCategoryCommand, bool>, CategoryCommandHandler>();
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                    .AddEntityFrameworkStores<CatalogoContext>()
+                    .AddDefaultTokenProviders();
+
+            services.AddScoped<IAuthenticate, AuthenticateService>();
+            services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();
+
+            services.ConfigureApplicationCookie(op =>
+                            op.AccessDeniedPath = "/Account/Login");
 
             return services;
         }

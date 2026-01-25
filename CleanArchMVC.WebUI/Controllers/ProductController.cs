@@ -1,5 +1,6 @@
 ﻿using CleanArchMVC.Application.DTOs;
 using CleanArchMVC.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -11,6 +12,7 @@ using System.Threading.Tasks;
 
 namespace CleanArchMVC.WebUI.Controllers
 {
+    [Authorize]
     public class ProductController : Controller
     {
         private readonly IProductService _productService;

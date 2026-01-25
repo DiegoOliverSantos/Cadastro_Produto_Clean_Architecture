@@ -18,10 +18,16 @@ using CleanArchMVC.WebUI
 
 #nullable disable
     ;
+#nullable restore
+#line 2 "D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\Views\_ViewImports.cshtml"
+using CleanArchMVC.WebUI.ViewModels
+
+#nullable disable
+    ;
     #line default
     #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"47e02b4da20d198892b7b1b00b12944068797c438ef2e82d20ff70b4d56bad39", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"2ff63f9db9b963b8230d748cd47f7d1076140f7c5685800c2804575f9830f584", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"d46110ab3c81c66bae1412d37c8fab7ea4d2f3eff28c01a01c71ddaba2582177", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     internal sealed class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable

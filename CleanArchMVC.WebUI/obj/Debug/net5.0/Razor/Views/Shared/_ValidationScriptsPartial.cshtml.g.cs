@@ -18,10 +18,16 @@ using CleanArchMVC.WebUI
 
 #nullable disable
     ;
+#nullable restore
+#line 2 "D:\Curso\CleanArchMVC\CleanArchMVC.WebUI\Views\_ViewImports.cshtml"
+using CleanArchMVC.WebUI.ViewModels
+
+#nullable disable
+    ;
     #line default
     #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"9ef82fee87759dfecf2638af263085e669aa14a40c723d556d790d65a525ba11", @"/Views/Shared/_ValidationScriptsPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"2ff63f9db9b963b8230d748cd47f7d1076140f7c5685800c2804575f9830f584", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"d46110ab3c81c66bae1412d37c8fab7ea4d2f3eff28c01a01c71ddaba2582177", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     internal sealed class Views_Shared__ValidationScriptsPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable
@@ -52,7 +58,7 @@ using CleanArchMVC.WebUI
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9ef82fee87759dfecf2638af263085e669aa14a40c723d556d790d65a525ba113991", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9ef82fee87759dfecf2638af263085e669aa14a40c723d556d790d65a525ba114153", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -66,7 +72,7 @@ using CleanArchMVC.WebUI
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9ef82fee87759dfecf2638af263085e669aa14a40c723d556d790d65a525ba115054", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9ef82fee87759dfecf2638af263085e669aa14a40c723d556d790d65a525ba115216", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
